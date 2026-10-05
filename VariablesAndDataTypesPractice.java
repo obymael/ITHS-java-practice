@@ -2,6 +2,7 @@ public class VariablesAndDataTypesPractice {
     public static void main(String[] args) {
         variablesExample();
         declarationAndAssignmentExample();
+        variableNamesExample();
 
     }
 
@@ -36,5 +37,17 @@ public class VariablesAndDataTypesPractice {
 
         // Förklara skillnaden mellan deklarering och tilldelning.
         System.out.println("Att deklarera en variabel innebär att man skapar den och anger vilken typ den har, tilldelning ger variablen ett värde.");
+    }
+
+    public static void variableNamesExample() {
+        int x = 3;                      // Man ser värdet, men inte vad det representerar
+        String a = "obymael";           // Man ser texten, men inte vad den används till
+        boolean test = true;            // Man vet att något är true, men inte vad som testats
+
+        int loginAttempts = 3;          // Tydligt att värdet representerar antal inloggningsförsök
+        String userName = "obymael";    // Tydligt att texten representerar ett användarnamn
+        boolean hasPassedTest = true;   // Tydligt vad true/false representerar
+
+        System.out.println("Tydliga variabelnamn är viktiga eftersom de gör koden lättare att läsa, förstå och underhålla.");
     }
 }
