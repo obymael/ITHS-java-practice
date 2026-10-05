@@ -6,6 +6,7 @@ public class VariablesAndDataTypesPractice {
         changingVariablesExample();
         finalExample();
         primitiveDataTypesExample();
+        typeCastingExample();
 
     }
 
@@ -101,5 +102,29 @@ public class VariablesAndDataTypesPractice {
         System.out.println("Skillnaden mellan heltal och flyttal: int lagrar heltal, double kan lagra tal med decimaler.");
         // Förklara varför 'A' och "A" inte är samma typ.
         System.out.println("'A' är char - ett enskilt tecken som skrivs med enkla citationstecken; dubbla används för text (String).");
+    }
+
+    public static void typeCastingExample() {
+        // Skapa en variabel av typen byte och tilldela dess värde till en int.
+        byte smallNumber = 100; // en byte kan bara innehålla värden från -128 till 127
+        int biggerNumber = smallNumber; // implicit casting – detta sker automatiskt
+
+        System.out.println("byte: " + smallNumber);
+        System.out.println("byte -> int: " + biggerNumber);
+
+        // Skapa sedan en int och försök tilldela dess värde till en byte.
+        int number = 100;
+        //byte smallerNumber = number; // FEL: int kan inte automatiskt tilldelas till byte då den kan förlora information
+        // "Type mismatch: cannot convert from int to byte"
+
+        // Testa att använda explicit type casting.
+        byte smallerNumber = (byte) number;     // explicit casting – talar om för Java att konvertera
+        System.out.println("int: " + number);
+        System.out.println("int -> byte: " + smallerNumber);
+
+        // Beskriv skillnaden mellan implicit och explicit type casting.
+        System.out.println("Implicit casting sker automatiskt när värdet går från en mindre till en större datatyp.");
+        System.out.println("Explicit casting måste anges manuellt när värdet går från en större till en mindre datatyp.");
+        // Extra: om man tilldelar 200 till variabeln `number` hade `smallerNumber` blivit `-56` just eftersom en byte kan bara innehålla värden från -128 till 127
     }
 }
