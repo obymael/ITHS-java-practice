@@ -5,6 +5,7 @@ public class VariablesAndDataTypesPractice {
         variableNamesExample();
         changingVariablesExample();
         finalExample();
+        primitiveDataTypesExample();
 
     }
 
@@ -38,7 +39,7 @@ public class VariablesAndDataTypesPractice {
         System.out.println(age);
 
         // Förklara skillnaden mellan deklarering och tilldelning.
-        System.out.println("Att deklarera en variabel innebär att man skapar den och anger vilken typ den har, tilldelning ger variablen ett värde.");
+        System.out.println("Att deklarera en variabel innebär att man skapar den och anger vilken typ den har, tilldelning ger variabeln ett värde.");
     }
 
     public static void variableNamesExample() {
@@ -54,26 +55,51 @@ public class VariablesAndDataTypesPractice {
     }
 
     public static void changingVariablesExample() {
+        // Skapa en int med värdet 10.
         int students = 10;
-
+        
+        // Skriv ut variabeln.
         System.out.println(students);
 
+        // Tilldela den sedan värdet 25.
         students = 25;                  // 10 skrivs över & ersätts med 25
 
+        // Skriv ut variabeln igen.
         System.out.println(students);
         System.out.println("När en variabel tilldelas ett nytt värde skrivs det gamla över & ersätts med det nya.");
     }
 
     public static void finalExample() {
+        // Skapa en variabel med final.
         final int students;             // deklarering
+
+        // Tilldela den ett värde.
         students = 10;                  // första tilldelningen
 
-        System.out.println(students);
-
+        // Försök därefter ändra värdet.
         //students = 25;                  // andra tilldelningen – detta går inte eftersom students är final
+
+        // Läs felmeddelandet som Java ger dig.
         // Koden går inte att kompilera & ger felmeddelandet: "The final local variable students may already have been assigned"
 
-        System.out.println(students);
         System.out.println("Final är användbart för värden som inte ska kunna ändras efter att de tilldelats, exempelvis när man vill förhindra att ett konstant värde ändras av misstag.");
+    }
+
+    public static void primitiveDataTypesExample() {
+        // Skriv exempel på värden som kan lagras i int, double, boolean och char.
+        int age = 33;               // heltal
+        double height = 179.4;      // flyttal (decimaltal)
+        boolean isFunny = true;     // true eller false
+        char letter = 'A';          // ett tecken
+
+        System.out.println("int: " + age);
+        System.out.println("double: " + height);
+        System.out.println("boolean: " + isFunny);
+        System.out.println("char: " + letter);
+
+        // Förklara skillnaden mellan heltal och flyttal.
+        System.out.println("Skillnaden mellan heltal och flyttal: int lagrar heltal, double kan lagra tal med decimaler.");
+        // Förklara varför 'A' och "A" inte är samma typ.
+        System.out.println("'A' är char - ett enskilt tecken som skrivs med enkla citationstecken; dubbla används för text (String).");
     }
 }
