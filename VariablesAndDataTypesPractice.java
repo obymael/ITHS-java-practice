@@ -4,6 +4,7 @@ public class VariablesAndDataTypesPractice {
         declarationAndAssignmentExample();
         variableNamesExample();
         changingVariablesExample();
+        finalExample();
 
     }
 
@@ -61,5 +62,18 @@ public class VariablesAndDataTypesPractice {
 
         System.out.println(students);
         System.out.println("När en variabel tilldelas ett nytt värde skrivs det gamla över & ersätts med det nya.");
+    }
+
+    public static void finalExample() {
+        final int students;             // deklarering
+        students = 10;                  // första tilldelningen
+
+        System.out.println(students);
+
+        //students = 25;                  // andra tilldelningen – detta går inte eftersom students är final
+        // Koden går inte att kompilera & ger felmeddelandet: "The final local variable students may already have been assigned"
+
+        System.out.println(students);
+        System.out.println("Final är användbart för värden som inte ska kunna ändras efter att de tilldelats, exempelvis när man vill förhindra att ett konstant värde ändras av misstag.");
     }
 }
