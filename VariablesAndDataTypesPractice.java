@@ -3,6 +3,7 @@ public class VariablesAndDataTypesPractice {
         variablesExample();
         declarationAndAssignmentExample();
         variableNamesExample();
+        changingVariablesExample();
 
     }
 
@@ -49,5 +50,16 @@ public class VariablesAndDataTypesPractice {
         boolean hasPassedTest = true;   // Tydligt vad true/false representerar
 
         System.out.println("Tydliga variabelnamn är viktiga eftersom de gör koden lättare att läsa, förstå och underhålla.");
+    }
+
+    public static void changingVariablesExample() {
+        int students = 10;
+
+        System.out.println(students);
+
+        students = 25;                  // 10 skrivs över & ersätts med 25
+
+        System.out.println(students);
+        System.out.println("När en variabel tilldelas ett nytt värde skrivs det gamla över & ersätts med det nya.");
     }
 }
