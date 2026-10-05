@@ -7,7 +7,7 @@ public class VariablesAndDataTypesPractice {
         finalExample();
         primitiveDataTypesExample();
         typeCastingExample();
-
+        stringExample();
     }
 
     public static void variablesExample() {
@@ -126,5 +126,34 @@ public class VariablesAndDataTypesPractice {
         System.out.println("Implicit casting sker automatiskt när värdet går från en mindre till en större datatyp.");
         System.out.println("Explicit casting måste anges manuellt när värdet går från en större till en mindre datatyp.");
         // Extra: om man tilldelar 200 till variabeln `number` hade `smallerNumber` blivit `-56` just eftersom en byte kan bara innehålla värden från -128 till 127
+    }
+
+    public static void stringExample() {
+        // Skapa variablerna firstName och lastName.
+        String firstName = "Elin";
+        String lastName = "Forssell";
+
+        // Slå ihop dem till en ny String med hjälp av +.
+        String fullName = firstName + " " + lastName;
+
+        // Skriv ut hela namnet.
+        System.out.println(fullName); // Elin Forssell
+
+        // Använd length() för att ta reda på hur många tecken den färdiga texten innehåller.
+        System.out.println(fullName.length()); // 13
+
+        // Ändra texten och undersök hur resultatet påverkas.
+        lastName = "Marchander";
+
+
+        // `fullName` uppdateras inte automatiskt när `lastName` ändras
+        // uttrycket användes för att skapa värdet i `fullName` vid tilldelningen ovan
+        System.out.println(fullName); // fortfarande "Elin Forssell"
+
+        // Därför måste `fullName` tilldelas ett nytt värde
+        fullName = firstName + " " + lastName;
+
+        System.out.println(fullName); // Elin Marchander
+        System.out.println(fullName.length()); // 15
     }
 }
