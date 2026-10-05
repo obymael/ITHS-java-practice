@@ -17,8 +17,8 @@ public class ControlFlowPractice {
         elseIfExample();
 
         System.out.println("\n------------------------------ s w i t c h ------------------------------\n");
-        switchExample();        
-        
+        switchExample();
+
         System.out.println("\n------------------------- w h i l e  a t t a c k -------------------------\n");
         whileAttackExample();
 
@@ -66,7 +66,7 @@ public class ControlFlowPractice {
         } else {
             System.out.println("Du är " + age + " år gammal & räknas som barn.");
         }
-        
+
     }
 
     /** ELSE IF ( b a t t e r i )
@@ -92,7 +92,7 @@ public class ControlFlowPractice {
         }
 
         System.out.println("Batterinivå: " + batteryPercentage + "% | Status: " + batteryStatus);
-        
+
     }
 
     /** SWITCH ( c u r r e n t  m o o d)
@@ -130,7 +130,7 @@ public class ControlFlowPractice {
         }
 
         System.out.println("Current mood [" + mood + "]: " + description);
-        
+
     }
 
     /** WHILE ( a t t a c k )
@@ -198,7 +198,7 @@ public class ControlFlowPractice {
         for (int i = 1; i <= 10; i++) { // räkna från 1 till 10
             System.out.println(i);
         }
-        
+
     }
 
     /** BREAK ( c o r r e c t  d o o r )
@@ -214,7 +214,7 @@ public class ControlFlowPractice {
         System.out.println("DEBUG: Rätt dörr: " + correctDoor);
         for (int door = 1; door <=10; door++) { // öppna dörrar
             System.out.println("🚪 Öppnar dörr nummer " + door + "...");
-            
+
             if (door == correctDoor) { // tills rätt dörr hittas
                 System.out.println("BU! 👻 Din vän hoppar fram!");
                 break; // avbryt loopen
@@ -229,7 +229,7 @@ public class ControlFlowPractice {
     public static void continueExample() {
         // Gå igenom nivåerna 1-10 men hoppa över nivå 7
         for (int level = 1; level <= 10; level++) {
-            
+
             if (level == 7) {
                 System.out.println("Nivå 7 är trasig! Hoppar över...");
                 continue; // hoppa över nivå 7 – DEBUG: prova köra utan detta :)
