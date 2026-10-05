@@ -169,7 +169,7 @@ public class ControlFlowPractice {
      * Övning: skriv ut ett meddelande minst en gång med en do-while-loop
      */
     public static void doWhileExample() {
-        Random random = new Random(); // används för försök
+        Random random = new Random(); // används för att slumpa vilken nyckel som är rätt
         int correctKey = random.nextInt(3) + 1;
         int currentKey = 1;
         boolean chestOpen = false;
@@ -189,7 +189,7 @@ public class ControlFlowPractice {
         System.out.println("\nSkattkistan är fylld med guldmynt! 💰 Woohoo!");
     }
 
-    /* FOR-LOOP ( c o u n t i n g )
+    /** FOR-LOOP ( c o u n t i n g )
      * – upprepar ett kodblock ett bestämt antal gånger
      * Övning: skriv ut talen 1-10 med en for-loop
      */
@@ -201,7 +201,7 @@ public class ControlFlowPractice {
         
     }
 
-    /* BREAK ( c o r r e c t  d o o r )
+    /** BREAK ( c o r r e c t  d o o r )
      * – avbryter en loop direkt även om loopens villkor fortfarande är sant
      * Övning: loop som avbryts när räknaren når ett visst tal
      */
@@ -222,7 +222,7 @@ public class ControlFlowPractice {
         }
     }
 
-    /* CONTINUE ( l e v e l s )
+    /** CONTINUE ( l e v e l s )
      * – hoppar över resten av det aktuella varvet & fortsätter med nästa
      * Övning: loop som hoppar över ett visst tal
      */
