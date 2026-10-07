@@ -8,12 +8,19 @@ public class Robot {
     String name; // eftersom klassen är satt till public behöver inte det specificeras här
     private int battery;
 
+    // Constructor som tar in parametrarna namn och batteri
     Robot(String name, int battery) {
         this.name = name;
         this.battery = battery;
     }
 
+    // En andra konstruktor med 
+    Robot(String name) {
+        this.name = name;
+        this.battery = 100; // sätter en default på 100% batteri, görs inte detta kommer det bli 0
+    }
+
     void showStatus() {
-        System.out.println("Name: " + name + " | Battery: " + battery);
+        System.out.println("Name: " + name + " | Battery: " + battery + " %");
     }
 }

@@ -21,8 +21,10 @@ public class Main {
         paladin.present();
 
         Robot robot = new Robot("Wall-E", 82); // skapa robot
+        Robot starWars = new Robot("R2-D2"); // använder den andra konstruktorn som ger 100% battery som default
 
         robot.showStatus();
+        starWars.showStatus();
 
         // försök ändra batteri – vad händer?
         // eftersom battery är private kan main inte komma åt det direkt och därför kompileras inte koden
