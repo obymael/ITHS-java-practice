@@ -12,9 +12,7 @@ public class Animal {
         this.sound = sound;
     }
 
-    /** 
-     * 
-     */
+    // Metod för att skriva ut ljud
     void makeSound() {
         System.out.println(sound);
     }

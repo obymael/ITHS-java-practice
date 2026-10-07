@@ -14,7 +14,7 @@ public class Robot {
         this.battery = battery;
     }
 
-    // En andra konstruktor med 
+    // En andra konstruktor med
     Robot(String name) {
         this.name = name;
         this.battery = 100; // sätter en default på 100% batteri, görs inte detta kommer det bli 0
