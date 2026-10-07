@@ -5,5 +5,15 @@
  * - Skapa två olika karaktärer i Main.
  */
 public class Character {
+    String name;
+    int hp;
 
+    Character(String name, int hp) {
+        this.name = name;
+        this.hp = hp;
+    }
+
+    void present() {
+        System.out.println("Character: " + name + " | HP: " + hp);
+    }
 }
