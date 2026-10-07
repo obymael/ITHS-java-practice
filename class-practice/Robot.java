@@ -5,5 +5,15 @@
  * - Skapa en robot i Main. Testa vad som händer om du försöker ändra batteri direkt från Main.
  */
 public class Robot {
-    
+    String name; // eftersom klassen är satt till public behöver inte det specificeras här
+    private int battery;
+
+    Robot(String name, int battery) {
+        this.name = name;
+        this.battery = battery;
+    }
+
+    void showStatus() {
+        System.out.println("Name: " + name + " | Battery: " + battery);
+    }
 }

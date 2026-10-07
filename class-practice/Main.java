@@ -20,7 +20,12 @@ public class Main {
         mage.present();
         paladin.present();
 
-        // skapa robot
+        Robot robot = new Robot("Wall-E", 82); // skapa robot
+
+        robot.showStatus();
+
         // försök ändra batteri – vad händer?
+        // eftersom battery är private kan main inte komma åt det direkt och därför kompileras inte koden
+        // robot.battery = 100; // "The field Robot.battery is not visible"
     }
 }
