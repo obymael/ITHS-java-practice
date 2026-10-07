@@ -4,6 +4,18 @@
  * - Skapa metoden gorLjud() som skriver ut ljudet.
  * - Skapa en hund och en katt i Main och låt dem göra olika ljud.
  */
-public class Djur {
+public class Animal {
+    String sound;
 
+    // Constructor
+    Animal(String sound) {
+        this.sound = sound;
+    }
+
+    /** 
+     * 
+     */
+    void makeSound() {
+        System.out.println(sound);
+    }
 }

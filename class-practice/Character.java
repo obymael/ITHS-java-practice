@@ -4,6 +4,6 @@
  * - Skapa en metod presentera() som skriver ut karaktärens namn och liv.
  * - Skapa två olika karaktärer i Main.
  */
-public class Spelkaraktar {
+public class Character {
 
 }

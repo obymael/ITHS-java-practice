@@ -6,9 +6,12 @@
  */
 public class Main {
     public static void main(String[] args) {
-        // skapa en hund
-        // skapa en katt
-        // gör ljud
+        
+        Animal dog = new Animal("voff"); // skapa en hund
+        Animal cat = new Animal("mjau"); // skapa en katt
+        
+        dog.makeSound(); // gör ljud: voff
+        cat.makeSound(); // gör ljud: mjau
 
         // skapa karaktär
 
