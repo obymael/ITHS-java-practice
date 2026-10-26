@@ -16,7 +16,7 @@ public class ScoreKeeper {
     // Anropa checkScore och hantera eventuella exceptions
     static void testScore(int score) {
         try {
-            System.out.printf("| %3s | Score ", score);
+            System.out.printf("| %3d | Score ", score);
             checkScore(score);
 
         } catch (IllegalArgumentException e) {
